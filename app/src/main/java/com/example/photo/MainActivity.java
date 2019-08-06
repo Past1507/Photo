@@ -12,13 +12,23 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     TextView txt;
+    int randNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         initActivity();
-        int randNum = new Random().nextInt(101);
+        //if (randNum == 0) {
+        //    txt.setText(R.string.firstText);
+        //}
+
+        //else{
+        //    String text1 = getString(R.string.text,randNum);
+        //    txt.setText(text1);
+        //}
+        randNum = new Random().nextInt(101);
         String text1 = getString(R.string.text,randNum);
         txt.setText(text1);
     }
@@ -27,12 +37,16 @@ public class MainActivity extends AppCompatActivity {
         Button btnForward = findViewById(R.id.btnForward);
         txt = (TextView)findViewById(R.id.txt);
 
+
+
         btnForward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(MainActivity.this,
                         MainActivity.class);
                 startActivity(intent);
+
             }
         });
 
