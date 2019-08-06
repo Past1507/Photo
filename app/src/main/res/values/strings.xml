@@ -2,6 +2,6 @@
     <string name="app_name">Просмотр фото</string>
     <string name="forward">Вперед</string>
     <string name="back">Назад</string>
-    <string name="text">https://myfile.org/</string>
+    <string name="text">https://myfile.org/%1$d</string>
 
 </resources>
