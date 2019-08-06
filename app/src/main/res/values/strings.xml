@@ -3,5 +3,5 @@
     <string name="forward">Вперед</string>
     <string name="back">Назад</string>
     <string name="text">https://myfile.org/%1$d</string>
-
+    <string name="firstText">https://myfile.org/</string>
 </resources>
