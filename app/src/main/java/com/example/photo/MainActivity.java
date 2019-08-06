@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initActivity();
+        int randNum = new Random().nextInt(101);
+        String text1 = getString(R.string.text,randNum);
+        txt.setText(text1);
     }
 
     private void initActivity() {
@@ -30,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,
                         MainActivity.class);
                 startActivity(intent);
-                int randNum = new Random().nextInt(101);
-                txt.setText("https://myfile.org/"+randNum);
             }
         });
 
